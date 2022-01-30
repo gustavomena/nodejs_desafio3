@@ -50,9 +50,9 @@ http
              
                   console.log(fs.readFile(userFile, 'utf-8', (err, data) => {
                      if (err) {
-                         console.log('no se pudo leer')
+                         console.log('no se pudo leer');
                     } else {
-                         console.log(chalk.blue.bgWhite(data))
+                         console.log(chalk.blue.bgWhite(data));
                     }
                   }))
                 
@@ -61,16 +61,16 @@ http
                     if (err) {
                         console.log('no se pudo leer')
                     } else {
-                        console.log(chalk.blue.bgWhite(data))
+                        console.log(chalk.blue.bgWhite(data));
                     }
                  })]
                 _.forOwn(arr, function (value, key) {
-                    console.log(value)
+                    console.log(value);
                 })
 
             })
             .catch((e) => {
-                console.log(e)
+                console.log(e);
             });
         
-}).listen(3000,()=>console.log('UP!'))
+}).listen(3000,()=>console.log('UP!'));
